@@ -1,0 +1,67 @@
+.content2{
+    width: 80%;
+    margin:10vh auto 0 auto;
+    
+    div{
+        padding: 20px;
+        margin-right: 20px;
+        text-align: center;
+        p{
+             padding-bottom: 20px;
+             color:$black;
+        }
+        button{
+            background-color:green;
+            color:$white;
+            border-radius:0;
+            border: none;
+            font-size: 16px;
+            text-align: center;
+        }
+        .tittle{
+            font-size:16px;
+            color:$black;
+        }
+        .price{
+            font-size: 80px;            
+        }
+        .month{
+            font-size: 16px;
+            color:$darkgray;
+        }
+        .features{    
+            padding-top:20px;       
+            font-size:13px;
+            b{
+                color:$darkgray;
+            }
+        }
+    }
+     .highlighted{
+            background-color: green!important;
+            color: $white !important;
+            p{
+                color:$white; 
+                b{
+                    color:$white;
+                }
+            }
+            button{
+                border: 1px solid $white;
+            }
+     }
+     .middle{
+        background-color: lightgray;
+     }
+     
+}
+
+.tittle{
+    font-size: 24px;
+    color:$black;
+}
+.subtittle{
+    font-size: 16px;
+    color:$darkgray;
+    padding-bottom: 30px;
+}

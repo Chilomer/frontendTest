@@ -2,5 +2,29 @@
     img{    
         width: 20%;
     }
-    margin-bottom:0px;    
+    margin-bottom:0px; 
+    background-color: $white;   
+    font-size:11px;    
+}
+
+    ul{
+        li{
+            a{
+                color:$darkgray;
+                font-size: 11px;
+            }
+        }
+        
+        &.double{ 
+            background-color:$black;      
+            width: 300px;
+        li{            
+            float:left;
+            width: 50%;
+            a{
+                color:$white; 
+            }
+        }
+    }
+    
 }

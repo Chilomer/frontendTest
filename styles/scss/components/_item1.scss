@@ -3,4 +3,26 @@
     .imgContainer{
     width: 100% \9;
     }
+    #videoButton{
+        position: relative;
+        float: initial;
+        margin:-85vh auto 15vh auto;
+        color:$white;
+        width: initial;
+        .bigFont{
+        font-size: 56px;
+        .playcircle{
+            width:20%;
+        }
+        
+    }
+    .littleFont{
+        font-size: 12px;
+    }
+    .cursor{
+        cursor:pointer;
+    }
+    }
+    
 }
+

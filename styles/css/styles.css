@@ -1,11 +1,118 @@
 .navbar {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  background-color: #fff;
+  font-size: 11px; }
   .navbar img {
     width: 20%; }
+
+ul li a {
+  color: #666666;
+  font-size: 11px; }
+ul.double {
+  background-color: #292929;
+  width: 300px; }
+  ul.double li {
+    float: left;
+    width: 50%; }
+    ul.double li a {
+      color: #fff; }
 
 .container-fluid {
   padding: 0; }
   .container-fluid .imgContainer {
     width: 100% \9; }
+  .container-fluid #videoButton {
+    position: relative;
+    float: initial;
+    margin: -85vh auto 15vh auto;
+    color: #fff;
+    width: initial; }
+    .container-fluid #videoButton .bigFont {
+      font-size: 56px; }
+      .container-fluid #videoButton .bigFont .playcircle {
+        width: 20%; }
+    .container-fluid #videoButton .littleFont {
+      font-size: 12px; }
+    .container-fluid #videoButton .cursor {
+      cursor: pointer; }
+
+.content2 {
+  width: 80%;
+  margin: 10vh auto 0 auto; }
+  .content2 div {
+    padding: 20px;
+    margin-right: 20px;
+    text-align: center; }
+    .content2 div p {
+      padding-bottom: 20px;
+      color: #292929; }
+    .content2 div button {
+      background-color: green;
+      color: #fff;
+      border-radius: 0;
+      border: none;
+      font-size: 16px;
+      text-align: center; }
+    .content2 div .tittle {
+      font-size: 16px;
+      color: #292929; }
+    .content2 div .price {
+      font-size: 80px; }
+    .content2 div .month {
+      font-size: 16px;
+      color: #666666; }
+    .content2 div .features {
+      padding-top: 20px;
+      font-size: 13px; }
+      .content2 div .features b {
+        color: #666666; }
+  .content2 .highlighted {
+    background-color: green !important;
+    color: #fff !important; }
+    .content2 .highlighted p {
+      color: #fff; }
+      .content2 .highlighted p b {
+        color: #fff; }
+    .content2 .highlighted button {
+      border: 1px solid #fff; }
+  .content2 .middle {
+    background-color: lightgray; }
+
+.tittle {
+  font-size: 24px;
+  color: #292929; }
+
+.subtittle {
+  font-size: 16px;
+  color: #666666;
+  padding-bottom: 30px; }
+
+.content3 {
+  position: relative;
+  float: initial;
+  margin: -85vh auto 15vh auto;
+  color: #fff;
+  width: 80%; }
+  .content3 .tittle {
+    color: #fff;
+    font-size: 40px; }
+  .content3 .subtittle {
+    color: #fff;
+    font-size: 16px; }
+  .content3 .boxes {
+    padding: 20px;
+    background-color: rgba(41, 41, 41, 0.5);
+    margin-right: 20px; }
+    .content3 .boxes .tittle {
+      color: #fff;
+      font-size: 16px; }
+    .content3 .boxes .text {
+      color: #fff;
+      font-size: 13px; }
+    .content3 .boxes .icon {
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+      width: 70px;
+      padding-bottom: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
