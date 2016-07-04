@@ -76,7 +76,7 @@ ul.double {
     .content2 .highlighted button {
       border: 1px solid #fff; }
   .content2 .middle {
-    background-color: lightgray; }
+    background-color: lightgrey; }
 
 .tittle {
   font-size: 24px;
@@ -114,5 +114,51 @@ ul.double {
       filter: invert(100%);
       width: 70px;
       padding-bottom: 10px; }
+
+.content4 {
+  margin-top: 28vh; }
+  .content4 div {
+    padding: 0; }
+  .content4 .form {
+    padding: 5%; }
+    .content4 .form P {
+      color: #292929;
+      font-size: 12px; }
+    .content4 .form .inputs {
+      background-color: lightgrey;
+      border-radius: 0;
+      margin-bottom: 10px;
+      color: #666666;
+      font-size: 13px; }
+    .content4 .form button {
+      font-size: 11px;
+      border-radius: 0;
+      color: #fff;
+      background-color: green;
+      height: 50px;
+      width: 100%; }
+  .content4 #map {
+    width: 100%; }
+
+.footer {
+  background-color: #292929; }
+  .footer .content {
+    margin: 50px auto 0 auto;
+    width: 80%;
+    color: #fff;
+    font-size: 16px; }
+    .footer .content img {
+      margin-left: 20px;
+      width: 100px;
+      margin-bottom: 40px; }
+    .footer .content .social {
+      vertical-align: middle;
+      padding-left: 100px; }
+      .footer .content .social p {
+        margin-left: 20px; }
+      .footer .content .social img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        width: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

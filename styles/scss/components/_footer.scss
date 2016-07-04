@@ -1,0 +1,27 @@
+.footer{
+    background-color: $black;    
+    .content{
+        margin:50px auto 0 auto;
+        width: 80%;
+        color:$white;
+        font-size: 16px;
+        img{
+            margin-left:20px;
+            width: 100px;
+            margin-bottom:40px;
+        }
+        .social{
+            vertical-align: middle;
+            padding-left: 100px;
+            p{
+                margin-left:20px;
+            }
+            img{
+                -webkit-filter: invert(100%); 
+                filter: invert(100%);
+                width: 20px;
+            }
+        }
+    }
+   
+}
