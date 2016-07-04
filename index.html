@@ -22,10 +22,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Menu Item 1</a></li>
-                    <li><a href="#">Menu Item 2</a></li>
-                    <li><a href="#">Menu Item 3</a></li>
-                    <li><a href="#">Menu Item 4</a></li>
+                    <li><a href="#section1">Menu Item 1</a></li>
+                    <li><a href="#section2">Menu Item 2</a></li>
+                    <li><a href="#section3">Menu Item 3</a></li>
+                    <li><a href="#section4">Menu Item 4</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MEGA DROPDOWN <span class="caret"></span></a>
                         <ul class="dropdown-menu double">
@@ -48,7 +48,7 @@
         <!-- /.container-fluid -->
     </nav>
     <!--item1-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="section1">
         <img src="sources/background-1.jpg" class=" imgContainer" alt="item1">
         <center>
             <div id="videoButton">
@@ -86,7 +86,7 @@
             </div>
         </div>
         <!--item2-->
-        <div class="container-fluid">
+        <div class="container-fluid" id="section2">
 
             <div class="rol content2">
                 <center>
@@ -142,7 +142,7 @@
             </div>
         </div>
         <!--item3-->
-        <div class="container-fluid hidden-xs">
+        <div class="container-fluid hidden-xs" id="section3">
             <img src="sources/background-2.jpg" class="img-responsive imgContainer" alt="item1">
             <div class="rol content3">
                 <center>
@@ -185,8 +185,88 @@
 
         </div>
         <!--item4-->
-        <div class="container-fluid">
+        <div class="container-fluid" id="section4">
+            <div class="rol content4">
+                <div class="col-md-6 form">
+                    <center>
+                        <p>THIS IS A FORM </p>
+                        <form onsubmit="" action="javascript: postContactToGoogle()">
+                            <input id="name" class="form-control input-lg inputs" type="text" required placeholder="YOUR NAME">
+                            <input id="email" class="form-control input-lg inputs" type="text" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                                placeholder="EMAIL ADDRESS">
+                            <textarea id="message" class="form-control input-lg inputs" type="text" required minlength="10" placeholder="MESSAGE"></textarea>
+                            <button type="submit" class="btn btn-primary"> SEND MESSAGE</button>
+                        </form>
+                    </center>
+                    <script type="text/javascript">                        
+                        function postContactToGoogle(){
+                            var name = $('#name').val();
+                            var email = $('#email').val();
+                            var feed = $('#message').val();
+                            alert(name);
+                            if ((name !== "") && (email !== "") && ((feed !== ""))) {
+                                $.ajax({
+                                    url: "https://docs.google.com/spreadsheets/d/1ZKLeIkLF4YPKK2R3rGbUWu4I07hLFK02Rn4JovlIzCw/pubhtml",
+                                    data: {"entry.1" : name, "entry.3" : email, "entry.4": feed},
+                                    type: "POST",
+                                    dataType: "xml",
+                                    statusCode: {
+                                        0: function (){
+                    
+                                            $('#name').val("");
+                                            $('#email').val("");
+                                            $('#message').val("");
+                                            //Success message
+                                            alert("yeah!");
+                                        },
+                                        200: function (){
+                                            $('#name').val("");
+                                            $('#email').val("");
+                                            $('#message').val("");
+                                            //Success Message
+                                            alert("yeah1!");
+                                        }
+                                    }
+                                });
+                            }
+                            else {
+                                //Error message
+                            }
+                        }
+                    </script>
+                </div>
+                <div class="col-md-6">
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.0989394416733!2d-103.41391668555183!3d20.624823606821835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ac51ef43cbb1%3A0xd2863687b35661b7!2sCalle+R%C3%ADo+Cihuatlan+1164%2C+Las+%C3%81guilas%2C+45080+Zapopan%2C+Jal.!5e0!3m2!1ses!2smx!4v1467607526649"
+                        height="450" frameborder="0" style="border:0"></iframe>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="container-fluid footer">
+            <div class="content">
+                <div>
+                    <img alt="Brand" src="sources/corporate-white.png">
+                </div>
+                <div class="col-md-3">
 
+                    <p>HOME</p>
+                    <p>ABOUT</p>
+                    <p>FEATURES</p>
+                    <p>PRICING</p>
+                </div>
+                <div class="col-md-3">
+                    <p>PRESS</p>
+                    <p>FAQ</p>
+                    <p>CONTACT</p>
+
+                </div>
+                <div class="col-md-6 social">
+                    <p>Follow Us</p>
+                    <img class="icon" src="sources/twitter.svg" alt="box">
+                    <img class="icon" src="sources/facebook.svg" alt="box">
+                    <img class="icon" src="sources/vimeo.svg" alt="box">
+                </div>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -195,6 +275,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous"></script>
         <script defer src="js/functions.js" />
+
 
 
 </body>
