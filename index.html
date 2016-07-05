@@ -210,7 +210,7 @@
                             var name = $('#name').val();
                             var email = $('#email').val();
                             var feed = $('#message').val();
-                            alert(name);
+                         
                             if ((name !== "") && (email !== "") && ((feed !== ""))) {
                                 $.ajax({
                                     url: "https://docs.google.com/spreadsheets/d/1ZKLeIkLF4YPKK2R3rGbUWu4I07hLFK02Rn4JovlIzCw/pubhtml",
@@ -224,14 +224,14 @@
                                             $('#email').val("");
                                             $('#message').val("");
                                             //Success message
-                                            alert("yeah!");
+                                            
                                         },
                                         200: function (){
                                             $('#name').val("");
                                             $('#email').val("");
                                             $('#message').val("");
                                             //Success Message
-                                            alert("yeah1!");
+                                            
                                         }
                                     }
                                 });
